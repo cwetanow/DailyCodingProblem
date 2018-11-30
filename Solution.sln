@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem01", "Problem01\Problem01.csproj", "{EB9998C2-AC3B-4ECA-8FD4-4641E4055663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem01", "Problem01\Problem01.csproj", "{EB9998C2-AC3B-4ECA-8FD4-4641E4055663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem02", "Problem02\Problem02.csproj", "{B668401B-C65A-4413-9226-2311C6030B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem02", "Problem02\Problem02.csproj", "{B668401B-C65A-4413-9226-2311C6030B28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem03", "Problem03\Problem03.csproj", "{76C943A0-C55E-44D9-AE2E-8881AADF9736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem03", "Problem03\Problem03.csproj", "{76C943A0-C55E-44D9-AE2E-8881AADF9736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem04", "Problem04\Problem04.csproj", "{947418AF-2FFF-48EC-B04E-FEADF60F8A14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem04", "Problem04\Problem04.csproj", "{947418AF-2FFF-48EC-B04E-FEADF60F8A14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem06", "Problem06\Problem06.csproj", "{CE259C74-81E5-4A11-8E32-72625F6A6B70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem06", "Problem06\Problem06.csproj", "{CE259C74-81E5-4A11-8E32-72625F6A6B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem07", "Problem07\Problem07.csproj", "{512C20CC-1E45-4770-97F0-E9023DD740D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem07", "Problem07\Problem07.csproj", "{512C20CC-1E45-4770-97F0-E9023DD740D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
