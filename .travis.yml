@@ -1,0 +1,11 @@
+language: csharp
+solution: Solution.sln
+mono: none
+dotnet: 2.1
+
+notifications:
+  email: false
+
+script:
+  - dotnet restore
+  - dotnet build 
