@@ -9,3 +9,4 @@ notifications:
 script:
   - dotnet restore
   - dotnet build 
+  - dotnet test Tests/ 
