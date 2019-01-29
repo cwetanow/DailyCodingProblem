@@ -16,6 +16,7 @@
 	  <ProjectReference Include="..\Problem50\Problem50.csproj" />
 	  <ProjectReference Include="..\Problem62\Problem62.csproj" />
 	  <ProjectReference Include="..\Problem63\Problem63.csproj" />
+	  <ProjectReference Include="..\Problem69\Problem69.csproj" />
 	  <ProjectReference Include="..\Problem70\Problem70.csproj" />
 	</ItemGroup>
 </Project>
