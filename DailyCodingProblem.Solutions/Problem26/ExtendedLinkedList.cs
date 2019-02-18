@@ -1,12 +1,15 @@
-﻿namespace DailyCodingProblem.Solutions.Problem26
+﻿using System;
+
+namespace DailyCodingProblem.Solutions.Problem26
 {
 	public class ExtendedLinkedList<T> : Common.LinkedList<T>
+	where T : IComparable<T>
 	{
 		public T RemoveKthLastElement(int k)
 		{
 			var iterations = this.count - k;
 
-			var currentNode = this.root;
+			var currentNode = this.Root;
 			var previousNode = (LinkedListNode)null;
 
 			while (iterations > 0)
