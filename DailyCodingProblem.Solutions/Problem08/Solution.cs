@@ -2,7 +2,7 @@
 
 namespace DailyCodingProblem.Solutions.Problem08
 {
-	public class Program
+	public class Solution
 	{
 		public static void Test()
 		{
