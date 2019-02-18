@@ -1,5 +1,5 @@
 language: csharp
-solution: Solution.sln
+solution: DailyCodingProblem.sln
 mono: none
 dotnet: 2.1
 
@@ -9,4 +9,4 @@ notifications:
 script:
   - dotnet restore
   - dotnet build 
-  - dotnet test Tests/ 
+  - dotnet test DailyCodingProblem.Tests/ 
