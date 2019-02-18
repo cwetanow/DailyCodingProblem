@@ -1,8 +1,11 @@
-﻿namespace DailyCodingProblem.Solutions.Common
+﻿using System;
+
+namespace DailyCodingProblem.Solutions.Common
 {
-	public class LinkedList<T>
+	public class LinkedList<T> : IComparable<LinkedList<T>>
+		where T : IComparable<T>
 	{
-		protected class LinkedListNode
+		public class LinkedListNode
 		{
 			public LinkedListNode(T value)
 			{
@@ -20,19 +23,20 @@
 			public LinkedListNode Next { get; set; }
 		}
 
-		protected LinkedListNode root;
 		protected int count;
+
+		public LinkedListNode Root { get; set; }
 
 		public void Add(T element)
 		{
-			if (this.root == null)
+			if (this.Root == null)
 			{
 				this.count = 0;
-				this.root = new LinkedListNode(element);
+				this.Root = new LinkedListNode(element);
 			}
 			else
 			{
-				var currentNode = this.root;
+				var currentNode = this.Root;
 				var previousNode = (LinkedListNode)null;
 
 				while (currentNode != null)
@@ -45,6 +49,11 @@
 			}
 
 			this.count++;
+		}
+
+		public int CompareTo(LinkedList<T> other)
+		{
+			return this.Root.Value.CompareTo(other.Root.Value);
 		}
 	}
 }
