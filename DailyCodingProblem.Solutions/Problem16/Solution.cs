@@ -1,5 +1,4 @@
 ﻿using System;
-using Problem16;
 
 namespace DailyCodingProblem.Solutions.Problem16
 {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Problem16
+namespace DailyCodingProblem.Solutions.Problem16
 {
 	public class OrderLogService
 	{
