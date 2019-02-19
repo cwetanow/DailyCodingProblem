@@ -4,9 +4,9 @@ namespace DailyCodingProblem.Solutions.Problem08
 {
 	public class BinaryTree<T>
 	{
-		private readonly Node<T> root;
+		private readonly BinaryNode<T> root;
 
-		public BinaryTree(Node<T> root)
+		public BinaryTree(BinaryNode<T> root)
 		{
 			this.root = root;
 		}
@@ -16,7 +16,7 @@ namespace DailyCodingProblem.Solutions.Problem08
 			return this.GetUnivalTreesCount(this.root);
 		}
 
-		private int GetUnivalTreesCount(Node<T> node)
+		private int GetUnivalTreesCount(BinaryNode<T> node)
 		{
 			var result = 0;
 
@@ -38,7 +38,7 @@ namespace DailyCodingProblem.Solutions.Problem08
 			return result;
 		}
 
-		private bool IsUnival(Node<T> node)
+		private bool IsUnival(BinaryNode<T> node)
 		{
 			var isUnival = true;
 

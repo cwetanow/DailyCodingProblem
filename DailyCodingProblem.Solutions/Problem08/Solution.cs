@@ -6,7 +6,7 @@ namespace DailyCodingProblem.Solutions.Problem08
 	{
 		public static void Test()
 		{
-			var root = new Node<int>(0, new Node<int>(1), new Node<int>(0, new Node<int>(1, new Node<int>(1), new Node<int>(1)), new Node<int>(0)));
+			var root = new BinaryNode<int>(0, new BinaryNode<int>(1), new BinaryNode<int>(0, new BinaryNode<int>(1, new BinaryNode<int>(1), new BinaryNode<int>(1)), new BinaryNode<int>(0)));
 
 			var tree = new BinaryTree<int>(root);
 

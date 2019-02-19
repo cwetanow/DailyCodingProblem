@@ -8,14 +8,14 @@ namespace DailyCodingProblem.Solutions.Problem80
 		{
 		}
 
-		public static T GetDeepestNode<T>(Node<T> root)
+		public static T GetDeepestNode<T>(BinaryNode<T> root)
 		{
 			var (value, level) = GetDeepestNode(root, 0);
 
 			return value;
 		}
 
-		private static (T value, int level) GetDeepestNode<T>(Node<T> node, int currentLevel)
+		private static (T value, int level) GetDeepestNode<T>(BinaryNode<T> node, int currentLevel)
 		{
 			if (node.Left == null && node.Right == null)
 			{

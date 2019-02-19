@@ -5,7 +5,7 @@ namespace DailyCodingProblem.Solutions.Problem89
 {
 	public class Solution
 	{
-		public static bool IsBinaryTree<T>(Node<T> root)
+		public static bool IsBinaryTree<T>(BinaryNode<T> root)
 			where T : IComparable<T>
 		{
 			if (root.Left == null && root.Right == null)

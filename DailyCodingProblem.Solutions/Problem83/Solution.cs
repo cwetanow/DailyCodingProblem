@@ -7,12 +7,12 @@ namespace DailyCodingProblem.Solutions.Problem83
 	{
 		public static void Test()
 		{
-			var root = new Node<string>("a",
-			  new Node<string>("b",
-				new Node<string>("d"),
-				new Node<string>("e")),
-			  new Node<string>("c",
-				new Node<string>("f"), null));
+			var root = new BinaryNode<string>("a",
+			  new BinaryNode<string>("b",
+				new BinaryNode<string>("d"),
+				new BinaryNode<string>("e")),
+			  new BinaryNode<string>("c",
+				new BinaryNode<string>("f"), null));
 
 			PrintBinaryTree(root);
 			Console.WriteLine();
@@ -21,7 +21,7 @@ namespace DailyCodingProblem.Solutions.Problem83
 			PrintBinaryTree(root);
 		}
 
-		public static void ReverseBinaryTree<T>(Node<T> node)
+		public static void ReverseBinaryTree<T>(BinaryNode<T> node)
 		{
 			if (node.Left == null || node.Right == null)
 			{
@@ -36,7 +36,7 @@ namespace DailyCodingProblem.Solutions.Problem83
 			ReverseBinaryTree<T>(node.Right);
 		}
 
-		public static void PrintBinaryTree<T>(Node<T> node)
+		public static void PrintBinaryTree<T>(BinaryNode<T> node)
 		{
 			if (node == null)
 			{

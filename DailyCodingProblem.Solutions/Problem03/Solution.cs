@@ -12,7 +12,7 @@ namespace DailyCodingProblem.Solutions.Problem03
 
 		public static void Test()
 		{
-			var node = new Node<string>("root", new Node<string>("left", new Node<string>("left.left"), null), new Node<string>("right"));
+			var node = new BinaryNode<string>("root", new BinaryNode<string>("left", new BinaryNode<string>("left.left"), null), new BinaryNode<string>("right"));
 
 			var serialized = Serialize(node);
 
@@ -22,7 +22,7 @@ namespace DailyCodingProblem.Solutions.Problem03
 			Console.WriteLine(node.Left.Left.Value);
 		}
 
-		public static string Serialize(Node<string> node)
+		public static string Serialize(BinaryNode<string> node)
 		{
 			if (node == null)
 			{
@@ -39,7 +39,7 @@ namespace DailyCodingProblem.Solutions.Problem03
 			return builder.ToString();
 		}
 
-		public static Node<string> Deserialize(string serializedNode)
+		public static BinaryNode<string> Deserialize(string serializedNode)
 		{
 			var nodes = serializedNode
 				.Split('-', StringSplitOptions.RemoveEmptyEntries)
@@ -52,7 +52,7 @@ namespace DailyCodingProblem.Solutions.Problem03
 			return node;
 		}
 
-		private static Node<string> DeserializeNode(Queue<string> nodes)
+		private static BinaryNode<string> DeserializeNode(Queue<string> nodes)
 		{
 			if (nodes.Peek() != null)
 			{
@@ -63,7 +63,7 @@ namespace DailyCodingProblem.Solutions.Problem03
 					return null;
 				}
 
-				var node = new Node<string>(nextNode) {
+				var node = new BinaryNode<string>(nextNode) {
 					Left = DeserializeNode(nodes),
 					Right = DeserializeNode(nodes)
 				};
