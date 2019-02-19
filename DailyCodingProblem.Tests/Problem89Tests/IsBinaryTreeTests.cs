@@ -10,11 +10,11 @@ namespace DailyCodingProblem.Tests.Problem89Tests
 		public void TestIsBinaryTree_InputIsBinaryTree_ShouldReturnTrue()
 		{
 			// Arrange
-			var root = new Node<int>(5,
-				new Node<int>(3,
-					new Node<int>(2), new Node<int>(4)),
-				new Node<int>(7,
-					new Node<int>(6), new Node<int>(8)));
+			var root = new BinaryNode<int>(5,
+				new BinaryNode<int>(3,
+					new BinaryNode<int>(2), new BinaryNode<int>(4)),
+				new BinaryNode<int>(7,
+					new BinaryNode<int>(6), new BinaryNode<int>(8)));
 
 			// Act
 			var result = Solutions.Problem89.Solution.IsBinaryTree(root);
@@ -27,7 +27,7 @@ namespace DailyCodingProblem.Tests.Problem89Tests
 		public void TestIsBinaryTree_InputIsNotBinaryTree_ShouldReturnFalse()
 		{
 			// Arrange
-			var root = new Node<int>(1, new Node<int>(3), new Node<int>(5));
+			var root = new BinaryNode<int>(1, new BinaryNode<int>(3), new BinaryNode<int>(5));
 
 			// Act
 			var result = Solutions.Problem89.Solution.IsBinaryTree(root);

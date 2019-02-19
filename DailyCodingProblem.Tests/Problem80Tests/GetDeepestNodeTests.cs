@@ -10,10 +10,10 @@ namespace DailyCodingProblem.Tests.Problem80Tests
 		public void TestGetDeepestNode_ShouldReturnCorrectly()
 		{
 			// Arrange
-			var root = new Node<string>("a",
-			  new Node<string>("b",
-				new Node<string>("d"), null),
-			  new Node<string>("c"));
+			var root = new BinaryNode<string>("a",
+			  new BinaryNode<string>("b",
+				new BinaryNode<string>("d"), null),
+			  new BinaryNode<string>("c"));
 
 			var expected = "d";
 
