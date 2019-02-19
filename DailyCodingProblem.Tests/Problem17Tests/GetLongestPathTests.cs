@@ -24,5 +24,33 @@ namespace DailyCodingProblem.Tests.Problem17Tests
 			// Assert
 			Assert.AreEqual(expectedLength, length);
 		}
+
+		[Test]
+		public void TestGetLongestPath_EmptyInput_ShouldReturnCorrectLongestPath()
+		{
+			// Arrange
+			var path = string.Empty;
+			var expectedLongestPath = string.Empty;
+
+			// Act
+			var (longestPath, _) = Solutions.Problem17.Solution.GetLongestPath(path);
+
+			// Assert
+			Assert.AreEqual(expectedLongestPath, longestPath);
+		}
+
+		[Test]
+		public void TestGetLongestPath_EmptyInput_ShouldReturnCorrectLongestPathLength()
+		{
+			// Arrange
+			var path = string.Empty;
+			var expectedLongestPathLength = 0;
+
+			// Act
+			var (_, longestPathLength) = Solutions.Problem17.Solution.GetLongestPath(path);
+
+			// Assert
+			Assert.AreEqual(expectedLongestPathLength, longestPathLength);
+		}
 	}
 }
