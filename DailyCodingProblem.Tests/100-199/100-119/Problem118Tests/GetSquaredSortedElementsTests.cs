@@ -3,7 +3,7 @@
 namespace DailyCodingProblem.Tests.Problem118Tests
 {
 	[TestFixture]
-	public class GetSquaredSortedElementsTests
+	public class GetIntervalThatCoversOthersTests
 	{
 		[Test]
 		public void TestGetSquaredSortedElements_ShouldReturnCorrectly()
