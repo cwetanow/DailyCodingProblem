@@ -2,8 +2,8 @@
 
 namespace DailyCodingProblem.Solutions.Common
 {
-	public class LinkedList<T> : IComparable<LinkedList<T>>
-		where T : IComparable<T>
+	public class LinkedList<T> : IComparable<LinkedList<T>>, IEquatable<LinkedList<T>>
+		where T : IComparable<T>, IEquatable<T>
 	{
 		public class LinkedListNode
 		{
@@ -54,6 +54,30 @@ namespace DailyCodingProblem.Solutions.Common
 		public int CompareTo(LinkedList<T> other)
 		{
 			return this.Root.Value.CompareTo(other.Root.Value);
+		}
+
+		public bool Equals(LinkedList<T> other)
+		{
+			if (this.count != other.count)
+			{
+				return false;
+			}
+
+			var current = this.Root;
+			var otherCurrent = other.Root;
+
+			while (current != null)
+			{
+				if (!current.Value.Equals(otherCurrent.Value))
+				{
+					return false;
+				}
+
+				current = current.Next;
+				otherCurrent = otherCurrent.Next;
+			}
+
+			return true;
 		}
 	}
 }

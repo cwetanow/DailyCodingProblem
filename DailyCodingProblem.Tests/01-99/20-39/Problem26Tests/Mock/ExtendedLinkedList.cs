@@ -5,7 +5,7 @@ namespace DailyCodingProblem.Tests.Problem26Tests.Mock
 {
 	public class ExtendedWithContainsLinkedList<T>
 	  : ExtendedLinkedList<T>
-	  where T : IComparable<T>
+	  where T : IComparable<T>, IEquatable<T>
 	{
 		public bool Contains(T element)
 		{

@@ -3,7 +3,7 @@
 namespace DailyCodingProblem.Solutions.Problem26
 {
 	public class ExtendedLinkedList<T> : Common.LinkedList<T>
-	where T : IComparable<T>
+	where T : IComparable<T>, IEquatable<T>
 	{
 		public T RemoveKthLastElement(int k)
 		{

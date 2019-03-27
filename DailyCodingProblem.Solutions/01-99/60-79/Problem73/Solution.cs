@@ -10,7 +10,7 @@ namespace DailyCodingProblem.Solutions.Problem73
 		}
 
 		public static void Reverse<T>(this Common.LinkedList<T> list)
-			where T : IComparable<T>
+			where T : IComparable<T>, IEquatable<T>
 		{
 			var currentNode = list.Root;
 			var previousNode = (Common.LinkedList<T>.LinkedListNode)null;
@@ -28,7 +28,7 @@ namespace DailyCodingProblem.Solutions.Problem73
 		}
 
 		public static IList<T> ToList<T>(this Common.LinkedList<T> linkedList)
-			where T : IComparable<T>
+			where T : IComparable<T>, IEquatable<T>
 		{
 			var list = new List<T>();
 
