@@ -10,3 +10,4 @@ script:
   - dotnet restore
   - dotnet build 
   - dotnet test DailyCodingProblem.Tests/ 
+  - dotnet test DailyCodingProblem.Solutions/ 
