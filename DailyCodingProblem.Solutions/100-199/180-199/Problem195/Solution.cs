@@ -8,12 +8,20 @@
 
 			for (int i = 0; i < matrix.Length; i++)
 			{
-				for (int j = 0; j < matrix[i].Length; j++)
+				var col = 0;
+
+				while (matrix[i][col] < matrix[i1][j1])
 				{
-					if(matrix[i][j] < matrix[i1][j1] || matrix[i][j] > matrix[i2][j2])
-					{
-						itemsCount++;
-					}
+					itemsCount++;
+					col++;
+				}
+
+				col = matrix[i].Length - 1;
+
+				while (matrix[i][col] > matrix[i2][j2])
+				{
+					itemsCount++;
+					col--;
 				}
 			}
 
