@@ -2,7 +2,7 @@
 
 namespace DailyCodingProblem.Solutions.Problem232
 {
-	public class PrefixMapSum
+	public class Solution
 	{
 		private class TrieNode
 		{

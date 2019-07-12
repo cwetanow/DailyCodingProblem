@@ -9,7 +9,7 @@ namespace DailyCodingProblem.Solutions.Problem232
 		public void TestSum_ShouldReturnCorrectly()
 		{
 			// Arrange
-			var mapsum = new PrefixMapSum();
+			var mapsum = new Solution();
 			mapsum.Insert("columnar", 3);
 			mapsum.Insert("column", 2);
 
