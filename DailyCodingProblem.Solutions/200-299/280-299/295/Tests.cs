@@ -10,7 +10,7 @@ namespace DailyCodingProblem.Solutions.Problem295
 		[TestCase(3, new[] { 1, 2, 1 })]
 		[TestCase(4, new[] { 1, 3, 3, 1 })]
 		[TestCase(5, new[] { 1, 4, 6, 4, 1 })]
-		public void Test_ShouldReturnCorrectly(int k, int[] expectedResult)
+		public void TestGetKthRow_ShouldReturnCorrectly(int k, int[] expectedResult)
 		{
 			// Arrange, Act
 			var result = Solution.GetKthRow(k);
