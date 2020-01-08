@@ -9,7 +9,7 @@ namespace DailyCodingProblem.Solutions.Problem363
 		[TestCase(7, 7)]
 		[TestCase(1, 0, 2, 3)]
 		[TestCase(-5, 11, 10, 3, 9)]
-		public void Test_ShouldReturnCorrectly(int initialNumber, int expectedResult, params int[] otherNumbers)
+		public void TestCompute_ShouldReturnCorrectly(int initialNumber, int expectedResult, params int[] otherNumbers)
 		{
 			// Arrange
 			var builder = AddSubtractBuilder.Create(initialNumber);
