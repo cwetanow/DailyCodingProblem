@@ -2,13 +2,17 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="FluentAssertions" Version="5.9.0" />
+		<PackageReference Include="Huitian.PowerCollections" Version="1.0.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
 		<PackageReference Include="Moq" Version="4.7.145" />
-		<PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="3.16.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="NUnit" Version="3.8.1" />
 	</ItemGroup>
 </Project>
