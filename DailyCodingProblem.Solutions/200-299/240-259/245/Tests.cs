@@ -8,7 +8,7 @@ namespace DailyCodingProblem.Solutions.Problem245
 	public class Tests
 	{
 		[Test]
-		public void Test_ShouldReturnCorrectly()
+		public void TestGetMinimumNumberOfJumpsToEnd_ShouldReturnCorrectly()
 		{
 			// Arrange
 			var input = new List<int> { 6, 2, 4, 0, 5, 1, 1, 4, 2, 9 };
